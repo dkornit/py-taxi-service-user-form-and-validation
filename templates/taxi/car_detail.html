@@ -8,8 +8,8 @@
         Assign me to this car
       </a>
     {% else %}
-      <a href="{% url 'taxi:car-delete' pk=car.id %}" class="btn btn-danger link-to-page">
-      Delete
+      <a href="{% url 'taxi:car-remove' pk=car.id %}" class="btn btn-danger link-to-page">
+        Delete me from this car
       </a>
     {% endif %}
   </h1>
